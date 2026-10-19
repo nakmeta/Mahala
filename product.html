@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwoven Silk Scarf - Angkor Craft</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================================
+         HEADER
+         ================================================================== -->
+    <div class="topbar">
+        <div class="container">Free delivery in Phnom Penh on orders over $50 &nbsp;&bull;&nbsp; ដឹកជញ្ជូនឥតគិតថ្លៃ</div>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                Angkor Craft
+                <span>សិប្បកម្មអង្គរ</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="product.html" class="is-active">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="nav-cart"><a href="cart.html">Cart (4)</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ==================================================================
+         PRODUCT DETAIL  -  picture on the left, buying panel on the right
+         ================================================================== -->
+    <section class="section section--tight">
+        <div class="container">
+
+            <p class="breadcrumb">
+                <a href="index.html">Home</a> /
+                <a href="shop.html">Shop</a> /
+                Handwoven Silk Scarf
+            </p>
+
+            <div class="product-detail mt-md">
+
+                <!-- LEFT: main picture and three smaller ones -->
+                <div class="product-detail__media">
+
+                    <img src="images/product-silk-scarf.jpg" alt="Golden handwoven silk scarf laid flat">
+
+                    <ul class="thumbs">
+                        <li><img src="images/silk-scarf-detail-1.jpg" alt="Close-up of the silk weave"></li>
+                        <li><img src="images/silk-scarf-detail-2.jpg" alt="Hand-knotted fringe at the end of the scarf"></li>
+                        <li><img src="images/silk-scarf-detail-3.jpg" alt="The scarf worn over the shoulder"></li>
+                    </ul>
+
+                </div>
+
+                <!-- RIGHT: name, price, options and the buy button -->
+                <div class="product-detail__info">
+
+                    <span class="eyebrow">Textiles</span>
+                    <h1>Handwoven Silk Scarf</h1>
+
+                    <p class="rating">
+                        &#9733;&#9733;&#9733;&#9733;&#9734; <small>4.6 out of 5 &mdash; 28 reviews</small>
+                    </p>
+
+                    <p class="detail-price mb-0">$45.00</p>
+                    <p class="stock">In stock &mdash; 12 left</p>
+
+                    <p class="text-muted">
+                        Woven on a wooden loom in Takeo province from golden Cambodian
+                        silk, a fibre still reeled by hand from locally raised cocoons.
+                        Each scarf takes an artisan roughly four days to finish, so no
+                        two are ever exactly alike.
+                    </p>
+
+                    <!-- The form uses the same label + input pattern as the login
+                         card from week 5. It submits nowhere, because this is a
+                         static site with no server behind it. -->
+                    <form action="cart.html" method="get">
+
+                        <div class="field-row">
+
+                            <div class="field">
+                                <label for="colour">Colour</label>
+                                <select id="colour" name="colour">
+                                    <option value="gold">Golden yellow</option>
+                                    <option value="indigo">Indigo blue</option>
+                                    <option value="crimson">Crimson red</option>
+                                    <option value="ivory">Ivory white</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="qty">Quantity</label>
+                                <select id="qty" name="qty">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="field">
+                            <label for="note">Gift message <span class="text-muted">(optional)</span></label>
+                            <input id="note" name="note" type="text" placeholder="We will write it on the card">
+                        </div>
+
+                        <button type="submit" class="btn btn--gold btn--block">Add to cart</button>
+                        <a href="shop.html" class="btn btn--outline btn--block mt-sm">Continue shopping</a>
+
+                    </form>
+
+                    <ul class="detail-notes">
+                        <li>Free delivery in Phnom Penh on orders over $50</li>
+                        <li>$3 flat delivery anywhere else in Cambodia</li>
+                        <li>14-day returns, no questions asked</li>
+                        <li>Gift wrapping in banana leaf paper on request</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================================
+         DESCRIPTION LIST + SPECIFICATION TABLE
+         ================================================================== -->
+    <section class="section section--alt">
+        <div class="container split split--even">
+
+            <!-- <dl> is a description list: <dt> names a thing,
+                 <dd> describes it. It is the right tag for label/value pairs
+                 written as prose. -->
+            <div>
+                <h2>About this piece</h2>
+
+                <dl class="spec-list mt-md">
+
+                    <dt>The silk</dt>
+                    <dd>
+                        Golden silk from Cambodian mulberry silkworms, a strain that
+                        nearly disappeared in the 1970s and is now farmed again in
+                        Takeo and Banteay Meanchey.
+                    </dd>
+
+                    <dt>The weave</dt>
+                    <dd>
+                        Plain hand-weave on a treadle loom, finished with a hand-knotted
+                        fringe. Small irregularities in the weave are normal and are the
+                        mark of a handmade cloth.
+                    </dd>
+
+                    <dt>The artisan</dt>
+                    <dd>
+                        Made by Srey Mom, who has woven silk for 22 years and now trains
+                        six younger weavers in her village workshop.
+                    </dd>
+
+                    <dt>Caring for it</dt>
+                    <dd>
+                        Hand wash in cool water with mild soap, then dry in the shade.
+                        Never wring the cloth, and never use bleach.
+                    </dd>
+
+                </dl>
+            </div>
+
+            <!-- A plain two-column table, the same tag you used for the
+                 attendance sheet and the invoice. -->
+            <div>
+                <h2>Specification</h2>
+
+                <table class="table table--spec mt-md">
+                    <tr>
+                        <th>Product code</th>
+                        <td>AC-SILK-014</td>
+                    </tr>
+                    <tr>
+                        <th>Material</th>
+                        <td>100% Cambodian golden silk</td>
+                    </tr>
+                    <tr>
+                        <th>Size</th>
+                        <td>180 cm &times; 45 cm</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>110 g</td>
+                    </tr>
+                    <tr>
+                        <th>Made in</th>
+                        <td>Takeo province, Cambodia</td>
+                    </tr>
+                    <tr>
+                        <th>Time to make</th>
+                        <td>About 4 days</td>
+                    </tr>
+                    <tr>
+                        <th>Delivery</th>
+                        <td>2 &ndash; 4 working days</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================================
+         RELATED PRODUCTS
+         ================================================================== -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-head">
+                <span class="eyebrow">You may also like</span>
+                <h2>Related products</h2>
+            </div>
+
+            <div class="grid">
+
+                <div class="product-card">
+                    <span class="badge">Sale</span>
+                    <a href="product.html">
+                        <img src="images/product-krama.jpg" alt="Red and white checked krama scarf">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__cat">Textiles</span>
+                        <h3><a href="product.html">Traditional Krama Scarf</a></h3>
+                        <p class="mb-0">
+                            <span class="price">$12.00</span>
+                            <span class="price--was">$15.00</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product.html">
+                        <img src="images/product-rattan-bag.jpg" alt="Woven rattan handbag with leather strap">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__cat">Textiles</span>
+                        <h3><a href="product.html">Rattan Handbag</a></h3>
+                        <p class="mb-0"><span class="price">$28.00</span></p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product.html">
+                        <img src="images/product-lacquerware.jpg" alt="Black and gold lacquerware bowl set">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__cat">Home &amp; Decor</span>
+                        <h3><a href="product.html">Lacquerware Bowl Set</a></h3>
+                        <p class="mb-0"><span class="price">$32.00</span></p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product.html">
+                        <img src="images/product-silver-box.jpg" alt="Engraved silver betel nut box">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__cat">Home &amp; Decor</span>
+                        <h3><a href="product.html">Silver Betel Nut Box</a></h3>
+                        <p class="mb-0"><span class="price">$65.00</span></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================================
+         FOOTER
+         ================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-cols">
+
+                <div class="footer-col footer-col--wide">
+                    <h4>Angkor Craft</h4>
+                    <p>
+                        សិប្បកម្មអង្គរ &mdash; a small shop in Phnom Penh selling handmade
+                        Cambodian crafts, working directly with artisans in Kampot,
+                        Siem Reap and Takeo since 2015.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All products</a></li>
+                        <li><a href="shop.html">Textiles</a></li>
+                        <li><a href="shop.html">Food &amp; Spice</a></li>
+                        <li><a href="shop.html">Home &amp; Decor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="cart.html">Your cart</a></li>
+                        <li><a href="contact.html">Delivery &amp; returns</a></li>
+                        <li><a href="contact.html">Frequently asked</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li>Street 178, Phnom Penh</li>
+                        <li>+855 12 345 678</li>
+                        <li>hello@angkorcraft.com</li>
+                        <li>Open daily, 8am &ndash; 6pm</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; 2026 Angkor Craft. Student project for Web Design &mdash; BELTEI International University.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

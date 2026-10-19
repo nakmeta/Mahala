@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Angkor Craft</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================================
+         HEADER
+         ================================================================== -->
+    <div class="topbar">
+        <div class="container">Free delivery in Phnom Penh on orders over $50 &nbsp;&bull;&nbsp; ដឹកជញ្ជូនឥតគិតថ្លៃ</div>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                Angkor Craft
+                <span>សិប្បកម្មអង្គរ</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="nav-cart"><a href="cart.html" class="is-active">Cart (4)</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ==================================================================
+         PAGE TITLE
+         ================================================================== -->
+    <div class="page-title">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p class="breadcrumb mb-0">
+                <a href="index.html">Home</a> / Cart
+            </p>
+        </div>
+    </div>
+
+
+    <!-- ==================================================================
+         CART  -  table on the left, order summary on the right
+         ================================================================== -->
+    <section class="section">
+        <div class="container split">
+
+            <!-- LEFT: the items table. Same border-collapse table you built
+                 for the week 6 invoice, with a picture added to each row. -->
+            <div class="split__main">
+
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th class="align-right">Price</th>
+                            <th class="align-center">Quantity</th>
+                            <th class="align-right">Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="cart-item">
+                                    <img src="images/product-krama.jpg" alt="Red and white checked krama scarf">
+                                    <div>
+                                        <h4>Traditional Krama Scarf</h4>
+                                        <small>Colour: Red check</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-right">$12.00</td>
+                            <td class="align-center">
+                                <select class="qty-select" name="qty-krama" aria-label="Quantity of krama scarf">
+                                    <option>1</option>
+                                    <option selected>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </td>
+                            <td class="align-right">$24.00</td>
+                            <td class="align-center"><a href="cart.html" class="remove-link" title="Remove">&times;</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cart-item">
+                                    <img src="images/product-pepper.jpg" alt="Kampot pepper gift set in wooden jars">
+                                    <div>
+                                        <h4>Kampot Pepper Gift Set</h4>
+                                        <small>Black, red and white</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-right">$18.00</td>
+                            <td class="align-center">
+                                <select class="qty-select" name="qty-pepper" aria-label="Quantity of pepper set">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </td>
+                            <td class="align-right">$18.00</td>
+                            <td class="align-center"><a href="cart.html" class="remove-link" title="Remove">&times;</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cart-item">
+                                    <img src="images/product-lacquerware.jpg" alt="Black and gold lacquerware bowl set">
+                                    <div>
+                                        <h4>Lacquerware Bowl Set</h4>
+                                        <small>Set of four</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-right">$32.00</td>
+                            <td class="align-center">
+                                <select class="qty-select" name="qty-bowls" aria-label="Quantity of bowl set">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </td>
+                            <td class="align-right">$32.00</td>
+                            <td class="align-center"><a href="cart.html" class="remove-link" title="Remove">&times;</a></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <p class="mt-md mb-0">
+                    <a href="shop.html" class="btn btn--outline btn--small">&larr; Continue shopping</a>
+                    <a href="cart.html" class="btn btn--outline btn--small">Update cart</a>
+                </p>
+
+            </div>
+
+
+            <!-- RIGHT: the order summary. The numbers below must agree with
+                 the Total column in the table:
+                 24.00 + 18.00 + 32.00 = 74.00 subtotal
+                 74.00 + 3.00 delivery + 7.40 VAT = 84.40 to pay -->
+            <div class="split__side">
+
+                <div class="panel">
+
+                    <h3>Order summary</h3>
+
+                    <table class="totals mt-sm">
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$74.00</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery</td>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <td>VAT (10%)</td>
+                            <td>$7.40</td>
+                        </tr>
+                        <tr class="totals__grand">
+                            <td>Total</td>
+                            <td>$84.40</td>
+                        </tr>
+                    </table>
+
+                    <form action="#" method="post" class="mt-md">
+
+                        <div class="field">
+                            <label for="promo">Promo code</label>
+                            <input id="promo" name="promo" type="text" placeholder="e.g. ANGKOR10">
+                        </div>
+
+                        <button type="submit" class="btn btn--outline btn--block btn--small">Apply code</button>
+
+                    </form>
+
+                    <p class="mt-md mb-0">
+                        <a href="contact.html" class="btn btn--gold btn--block">Proceed to checkout</a>
+                    </p>
+
+                    <p class="field-hint text-center mt-sm mb-0">
+                        Pay by ABA, Wing, or cash on delivery.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================================
+         FOOTER
+         ================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-cols">
+
+                <div class="footer-col footer-col--wide">
+                    <h4>Angkor Craft</h4>
+                    <p>
+                        សិប្បកម្មអង្គរ &mdash; a small shop in Phnom Penh selling handmade
+                        Cambodian crafts, working directly with artisans in Kampot,
+                        Siem Reap and Takeo since 2015.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All products</a></li>
+                        <li><a href="shop.html">Textiles</a></li>
+                        <li><a href="shop.html">Food &amp; Spice</a></li>
+                        <li><a href="shop.html">Home &amp; Decor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="cart.html">Your cart</a></li>
+                        <li><a href="contact.html">Delivery &amp; returns</a></li>
+                        <li><a href="contact.html">Frequently asked</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li>Street 178, Phnom Penh</li>
+                        <li>+855 12 345 678</li>
+                        <li>hello@angkorcraft.com</li>
+                        <li>Open daily, 8am &ndash; 6pm</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; 2026 Angkor Craft. Student project for Web Design &mdash; BELTEI International University.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Angkor Craft</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================================
+         HEADER
+         ================================================================== -->
+    <div class="topbar">
+        <div class="container">Free delivery in Phnom Penh on orders over $50 &nbsp;&bull;&nbsp; ដឹកជញ្ជូនឥតគិតថ្លៃ</div>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                Angkor Craft
+                <span>សិប្បកម្មអង្គរ</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html" class="is-active">Contact</a></li>
+                    <li class="nav-cart"><a href="cart.html">Cart (4)</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ==================================================================
+         PAGE TITLE
+         ================================================================== -->
+    <div class="page-title">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="breadcrumb mb-0">
+                <a href="index.html">Home</a> / Contact
+            </p>
+        </div>
+    </div>
+
+
+    <!-- ==================================================================
+         FORM  +  SHOP INFORMATION
+         ================================================================== -->
+    <section class="section">
+        <div class="container split">
+
+            <!-- LEFT: the message form. Every field has a <label> joined to
+                 its input by for="..." and id="...", exactly as in week 5.
+                 required makes the browser refuse an empty submit. -->
+            <div class="split__main">
+
+                <h2>Send us a message</h2>
+                <p class="text-muted">
+                    Questions about an order, a custom piece, or a wholesale price?
+                    Write to us and we answer within one working day.
+                </p>
+
+                <form action="#" method="post" class="mt-md">
+
+                    <div class="field-row">
+
+                        <div class="field">
+                            <label for="first-name">First name <span class="required">*</span></label>
+                            <input id="first-name" name="first-name" type="text" placeholder="Sokha" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="last-name">Last name <span class="required">*</span></label>
+                            <input id="last-name" name="last-name" type="text" placeholder="Chan" required>
+                        </div>
+
+                    </div>
+
+                    <div class="field-row">
+
+                        <div class="field">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="+855 12 345 678">
+                        </div>
+
+                    </div>
+
+                    <div class="field">
+                        <label for="subject">What is it about?</label>
+                        <select id="subject" name="subject">
+                            <option value="order">An order I placed</option>
+                            <option value="product">A question about a product</option>
+                            <option value="custom">A custom or bulk order</option>
+                            <option value="visit">Visiting the workshop</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Your message <span class="required">*</span></label>
+                        <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+                    </div>
+
+                    <!-- The checkbox is written INSIDE its label, so clicking
+                         the words also ticks the box. -->
+                    <p class="checkbox-row">
+                        <label>
+                            <input name="subscribe" type="checkbox">
+                            Email me when new pieces arrive in the shop
+                        </label>
+                    </p>
+
+                    <button type="submit" class="btn btn--gold">Send message</button>
+
+                </form>
+
+            </div>
+
+
+            <!-- RIGHT: shop details, written as plain lists. -->
+            <div class="split__side">
+
+                <div class="panel">
+
+                    <h3>Visit the shop</h3>
+
+                    <dl class="spec-list">
+
+                        <dt>Address</dt>
+                        <dd>
+                            No. 42, Street 178<br>
+                            Sangkat Chey Chumneas<br>
+                            Daun Penh, Phnom Penh<br>
+                            Cambodia
+                        </dd>
+
+                        <dt>Phone</dt>
+                        <dd>+855 12 345 678</dd>
+
+                        <dt>Email</dt>
+                        <dd>hello@angkorcraft.com</dd>
+
+                        <dt>Opening hours</dt>
+                        <dd>
+                            Monday to Saturday, 8am &ndash; 6pm<br>
+                            Sunday, 9am &ndash; 4pm
+                        </dd>
+
+                    </dl>
+
+                </div>
+
+                <div class="panel mt-md">
+                    <h4>Follow us</h4>
+                    <ul class="detail-notes mb-0">
+                        <li><a href="#">Facebook &mdash; /angkorcraft</a></li>
+                        <li><a href="#">Instagram &mdash; @angkorcraft</a></li>
+                        <li><a href="#">Telegram &mdash; @angkorcraft</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================================
+         MAP
+         An <iframe> puts another web page inside this one. Here it is a
+         Google map, so no map code of our own is needed.
+         ================================================================== -->
+    <section class="section section--alt section--tight">
+        <div class="container">
+
+            <div class="section-head">
+                <span class="eyebrow">Find us</span>
+                <h2>Street 178, Phnom Penh</h2>
+                <p>Two minutes from the National Museum, on the corner opposite the pagoda.</p>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://maps.google.com/maps?q=Street%20178%20Phnom%20Penh%20Cambodia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    title="Map showing Angkor Craft on Street 178, Phnom Penh">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================================
+         FREQUENTLY ASKED  -  an ordered list of questions
+         ================================================================== -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-head">
+                <h2>Frequently asked</h2>
+            </div>
+
+            <div class="split">
+
+                <div class="split__main">
+                    <dl class="spec-list">
+
+                        <dt>How long does delivery take?</dt>
+                        <dd>
+                            One to two days inside Phnom Penh, and two to four days
+                            to other provinces. We send a Telegram message with the
+                            tracking number as soon as the parcel leaves the shop.
+                        </dd>
+
+                        <dt>How much is delivery?</dt>
+                        <dd>
+                            A flat $3 anywhere in Cambodia, and free on any order
+                            over $50.
+                        </dd>
+
+                        <dt>How can I pay?</dt>
+                        <dd>
+                            ABA bank transfer, Wing, or cash to the driver when the
+                            parcel arrives.
+                        </dd>
+
+                        <dt>Can I return something?</dt>
+                        <dd>
+                            Yes &mdash; within 14 days, as long as the item is unused
+                            and still has its tag. Food and spices cannot be returned
+                            once opened.
+                        </dd>
+
+                    </dl>
+                </div>
+
+                <div class="split__side">
+                    <div class="panel">
+                        <h4>Still not sure?</h4>
+                        <p class="text-muted">
+                            Send us a message using the form above, or call the shop
+                            directly during opening hours. We speak Khmer and English.
+                        </p>
+                        <p class="mb-0"><a href="shop.html" class="btn btn--outline btn--block btn--small">Back to the shop</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================================================
+         FOOTER
+         ================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-cols">
+
+                <div class="footer-col footer-col--wide">
+                    <h4>Angkor Craft</h4>
+                    <p>
+                        សិប្បកម្មអង្គរ &mdash; a small shop in Phnom Penh selling handmade
+                        Cambodian crafts, working directly with artisans in Kampot,
+                        Siem Reap and Takeo since 2015.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All products</a></li>
+                        <li><a href="shop.html">Textiles</a></li>
+                        <li><a href="shop.html">Food &amp; Spice</a></li>
+                        <li><a href="shop.html">Home &amp; Decor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="cart.html">Your cart</a></li>
+                        <li><a href="contact.html">Delivery &amp; returns</a></li>
+                        <li><a href="contact.html">Frequently asked</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li>Street 178, Phnom Penh</li>
+                        <li>+855 12 345 678</li>
+                        <li>hello@angkorcraft.com</li>
+                        <li>Open daily, 8am &ndash; 6pm</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; 2026 Angkor Craft. Student project for Web Design &mdash; BELTEI International University.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
